@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="StyleSheet" href="App.css" />
+    <title>Hello, world!</title>
+  </head>
+  <style>
+    
+  </style>
+  <body>
+    <!-- Search Box -->
+    <div class="container-sm my-3" style="width: 50%">
+      <div class="Search-box">
+        <form class="d-flex search-form">
+          <input
+            class="form-control me-2 search-box"
+            type="search"
+            placeholder="Search for Location"
+            aria-label="Search"
+            autocomplete="off"
+          />
+          <div
+            class="btn btn-outline-success my-location text-white co"
+            title="Detect My Location"
+            style="margin-right: 5px"
+          >
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div
+            class="btn btn-outline-success mic text-white co"
+            title="Search With your Voice"
+            style="margin-right: 5px"
+          >
+            <i class="bi bi-mic"></i>
+          </div>
+          <button
+            class="btn btn-outline-success search-btn text-white co"
+            type="submit"
+            title="Search"
+          >
+            Search
+          </button>
+        </form>
+        <p class="info"></p>
+      </div>
+    </div>
+
+    <!-- weather-forecast -->
+    <div class="container widget" style="width: 50%">
+      <div class="row">
+        <div class="col weatherIcon"><img src="" class="imgcond" /></div>
+      </div>
+      <div class="row">
+        <div
+          class="col bg-dark bg-gradient text-light weatherinfo text-center"
+        >
+          <span></span>
+        </div>
+        <div
+          class="col bg-dark bg-gradient text-light text-center discription"
+        >
+          <div class="weather-cond fs-2 fw-bold"></div>
+          <div class="place fs-4 fw-bold"></div>
+        </div>
+        <div class="col details">
+          <div class="col-sm date"></div>
+          <div class="col-sm time"></div>
+        </div>
+      </div>
+      <div class="row extra-temp">
+        <div class="col">
+          <div class="two-sided-section">
+            <p><i class="wi wi-sunset"></i></p>
+            <p class="extra-info-leftside cond text-left"></p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="two-sided-section">
+            <p><i class="wi wi-humidity"></i></p>
+            <p class="text-center extra-info-leftside humidity"></p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="two-sided-section">
+            <p><i class="wi wi-rain"></i></p>
+            <p class="text-center right-info extra-info-leftside pressure"></p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="two-sided-section">
+            <p><i class="wi wi-strong-wind"></i></p>
+            <p class="text-center right-info extra-info-leftside windspeed"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 Day-forecast -->
+    <div class="row row-cols-1 row-cols-md-5 g-4 m-1 weather-forecast">
+      <div class="col weather-forecast-item">
+        <div
+          class="card h-70 text-white bg-dark border-light border border-3"
+          style="border-radius: 1.3rem"
+        >
+          <h5 class="card-title text-center day text-white date1"></h5>
+
+          <div class="card-body text-center">
+            <img src="" class="img1" alt="..." style="width: 50%" />
+            <div class="card-text temp1"></div>
+            <div class="card-text humidity1"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col weather-forecast-item">
+        <div
+          class="card h-70 text-white bg-dark border-light border border-3"
+          style="border-radius: 1.3rem"
+        >
+          <h5 class="card-title text-center day text-white date2"></h5>
+
+          <div class="card-body text-center">
+            <img src="" class="img2" alt="..." style="width: 50%" />
+            <div class="card-text temp2"></div>
+            <div class="card-text humidity2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col weather-forecast-item">
+        <div
+          class="card h-70 text-white bg-dark border-light border border-3"
+          style="border-radius: 1.3rem"
+        >
+          <h5 class="card-title text-center day text-white date3"></h5>
+
+          <div class="card-body text-center">
+            <img src="" class="img3" alt="..." style="width: 50%" />
+            <div class="card-text temp3"></div>
+            <div class="card-text humidity3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col weather-forecast-item">
+        <div
+          class="card h-70 text-white bg-dark border-light border border-3"
+          style="border-radius: 1.3rem"
+        >
+          <h5 class="card-title text-center day text-white date4"></h5>
+
+          <div class="card-body text-center">
+            <img src="" class="img4" alt="..." style="width: 50%" />
+            <div class="card-text temp4"></div>
+            <div class="card-text humidity4"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col weather-forecast-item">
+        <div
+          class="card h-70 text-white bg-dark border-light border border-3"
+          style="border-radius: 1.3rem"
+        >
+          <h5 class="card-title text-center day text-white date5"></h5>
+
+          <div class="card-body text-center">
+            <img src="" class="img5" alt="..." style="width: 50%" />
+            <div class="card-text temp5"></div>
+            <div class="card-text humidity5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="App.js"></script>
+  </body>
+</html>
