@@ -142,7 +142,7 @@ function showWeather(weather) {
   pressure.innerText = `${weather.main.pressure} mb Pressure`;
 
   let windspeed = document.querySelector(".windspeed");
-  windspeed.innerText = `${weather.wind.speed}mph Speed`;
+  windspeed.innerText = `${weather.wind.speed} mph Speed`;
 
   let date = document.querySelector(".date");
   let todayDate = new Date();
@@ -152,9 +152,7 @@ function showWeather(weather) {
   time.innerText = timeManage();
 
   let sunset = document.querySelector(".cond");
-  sunset.innerHTML = `${Math.ceil(
-    weather.main.temp_max
-  )}&deg;C(Max)  ${Math.floor(weather.main.temp_min)}&deg;C(Min)`;
+  sunset.innerHTML = `${Math.round(weather.main.feels_like)}&deg;C Feels-like`;
 
   fivedayforecast(weather.id);
 
