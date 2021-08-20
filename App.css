@@ -4,11 +4,25 @@
   box-sizing: border-box;
   font-family: "Merienda", cursive;
 }
+
 body {
-  background-image: url("https://images.pexels.com/photos/296234/pexels-photo-296234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background: url("https://images.pexels.com/photos/296234/pexels-photo-296234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center center fixed;
+}
+form .input-block {
+  margin: 15px auto;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 5px 8px;
+}
+form .input-block input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 5px 10px;
 }
 .widget {
   display: none;
@@ -80,10 +94,8 @@ body {
   display: none;
   background: rgba(24, 24, 27, 0.8);
   padding: 25px;
-  
-  
+
   width: 100%;
-  
 }
 .info {
   text-align: center;

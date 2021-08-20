@@ -27,12 +27,48 @@
     <link rel="StyleSheet" href="App.css" />
     <title>Hello, world!</title>
   </head>
-  <style>
-    
-  </style>
+  <style></style>
   <body>
     <!-- Search Box -->
-    <div class="container-sm my-3" style="width: 50%">
+    <div class="container my-3">
+      <div class="row Search-box">
+        <form class="d-flex search-form">
+          <div class="input-block">
+            <input
+              type="search"
+              class="form-control search-box"
+              placeholder="Search for Location"
+              aria-label="Search"
+              autocomplete="off"
+            />
+            <button
+              class="btn btn-outline-success search-btn co text-white"
+              type="submit"
+              style="margin-right: 5px"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+            <div
+              class="btn mic co btn-outline-success text-white"
+              title="Search With your Voice"
+              style="margin-right: 5px"
+            >
+              <i class="bi bi-mic"></i>
+            </div>
+            <div
+              class="btn my-location co btn-outline-success text-white"
+              title="Detect My Location"
+              style="margin-right: 5px"
+            >
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+          </div>
+        </form>
+        <p class="info"></p>
+      </div>
+    </div>
+
+    <!-- <div class="container-sm my-3">
       <div class="Search-box">
         <form class="d-flex search-form">
           <input
@@ -42,6 +78,7 @@
             aria-label="Search"
             autocomplete="off"
           />
+         
           <div
             class="btn btn-outline-success my-location text-white co"
             title="Detect My Location"
@@ -66,7 +103,7 @@
         </form>
         <p class="info"></p>
       </div>
-    </div>
+    </div> -->
 
     <!-- weather-forecast -->
     <div class="container widget" style="width: 50%">
@@ -74,14 +111,10 @@
         <div class="col weatherIcon"><img src="" class="imgcond" /></div>
       </div>
       <div class="row">
-        <div
-          class="col bg-dark bg-gradient text-light weatherinfo text-center"
-        >
+        <div class="col bg-dark bg-gradient text-light weatherinfo text-center">
           <span></span>
         </div>
-        <div
-          class="col bg-dark bg-gradient text-light text-center discription"
-        >
+        <div class="col bg-dark bg-gradient text-light text-center discription">
           <div class="weather-cond fs-2 fw-bold"></div>
           <div class="place fs-4 fw-bold"></div>
         </div>
@@ -120,7 +153,7 @@
 
     <!-- 5 Day-forecast -->
     <div class="row row-cols-1 row-cols-md-5 g-4 m-1 weather-forecast">
-      <div class="row text-white text-center" style="width: 100%;">
+      <div class="row text-white text-center" style="width: 100%">
         <h1>5 Day Forecast:</h1>
       </div>
       <div class="col weather-forecast-item">
