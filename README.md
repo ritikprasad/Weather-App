@@ -20,6 +20,8 @@ Frontend :
 
 Framework: Bootstrap
 
+Website: https://lnkd.in/gigHh9Ku
+
 ### Getting Started
 For this project, I had used  VS Code.
 The project setup is really simple. Because we only want to use JavaScript without any frameworks. Start by creating a new project folder in VS Code, and inside that project folder, create two empty new files: App.html, App.css and App.js. The App.html file is the entry point for our website and contains the HTML code. In this project, we are also using Bootstrap.
